@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = '철민';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className='orange'>Hellow</h1>
+      <h2>Hellow</h2>
+      <p>{name}</p>
+      <ul>
+        <li>우유</li>
+        <li>딸기</li>
+        <img 
+        style={{ width: '200px', height: '200px'}}
+        src="https://lh3.googleusercontent.com/XWuZGqIrIsaoKHUqqQ2rs_GhS5JaH1p5pPBIUpj22mjNRNdR3Ana8FKz4B7JwsA6HIFVXGuU7pa4ELiW6iUNhs0Iyg=s1280-w1280-h800"
+        alt="nature"/>
+      </ul>
+    </>
   );
 }
 
