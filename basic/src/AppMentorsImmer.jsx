@@ -15,12 +15,12 @@ export default function AppMentors() {
     const handleAdd = () => {
         const name = prompt(`추가할 멘토의 이름을 작성해 주세요`);
         const title = prompt(`추가할 멘토의 직함을 입력해 주세요`);
-        updatePerson(person => person.mentors.push({name, title}));
+        updatePerson((person) => {person.mentors.push({name, title})});
     };
 
     const handleDelete = () => {
         const name = prompt(`삭제할 멘토의 이름을 작성해 주세요`);
-        updatePerson(person => {
+        updatePerson((person) => {
             const index = person.mentors.findIndex(m => m.name === name);
             if (index < 0) return;
             person.mentors.splice(index, 1);   
